@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website</title>
+</head>
+<style>
+    .task-one{
+        display: flex;
+    }
+    .taskonediv{
+        background-color: chartreuse;
+        width: 25%;
+        height: 600px;
+    }
+    .taskonedivtwo{
+        background-color: chocolate;
+        width: 75%;
+    }
+    
+    .gridcontainer{
+        display: grid;
+        grid-template-areas:
+        'one one one two two '
+        'one one one three four ' ;
+        height: 500px;
+        width: 70%;
+        background-color: bisque;
+        margin-top: 40px;
+        row-gap: 10px;
+        column-gap: 10px;
+       padding: 10px;
+    }
+    .griditems1{
+          grid-area: one;
+          background-color: crimson;
+    }
+    .griditems2{
+        grid-area: two;
+        background-color: darkorange;
+    }
+    .griditems3{
+        grid-area: three;
+        background-color: blueviolet;
+    }
+    .griditems4{
+        grid-area: four;
+        background-color: blue;
+    }
+    @media screen and (max-width:576px) {
+        .task-one{
+        display: flex;
+        flex-direction: column;
+        }
+        .taskonediv{
+        width: 75%;
+        height: 100px;
+        }
+        .taskonedivtwo{
+        height: 500px;
+        }
+        .gridcontainer{
+            display: grid;
+        
+        grid-template-areas:
+        'one one one one one'
+        'two two two two two'
+        'three three three three three '
+        'four four four four four' ;
+        }
+        .img{
+    background-image: url('/photos/banner-bg.jpg');
+            
+
+        }
+        .food1,.food2{
+    display: flex;
+    flex-direction: column;
+}
+    }
+
+.divcontainer{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 40px;
+    width: 60%;
+    height: 600px;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.divitem{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+    border: 10px solid burlywood;
+    padding: 5px;
+}
+.img{
+    height: 500px;
+    width: 500px;
+    background-image: url('/photos/pexels-alancabello-3780058.jpg');
+    background-size: cover;
+    margin-bottom: 30px;
+}
+button{
+    background-color: rgb(10, 201, 244);
+    border-radius: 5px;
+    border: 0;
+    color: aliceblue;
+}
+.food1,.food2{
+    margin-bottom: 5px;
+    display: flex;
+}
+</style>
+<body>
+    <section class="task-one">
+        <div class="taskonediv">
+            <h1>one div</h1>
+        </div>
+        <div class="taskonedivtwo">
+            <h1>two div</h1>
+        </div>
+    </section>
+    <section class="task-two">
+    <div class="gridcontainer">
+        <div class="griditems1">-1</div>
+        <div class="griditems2">-2</div>
+        <div class="griditems3">-3</div>
+        <div class="griditems4">-4</div>
+    </div>
+    </section>
+    <section class="divcontainer">
+        <div class="divitem">1</div>
+        <div class="divitem">2</div>
+        <div class="divitem">3</div>
+        <div class="divitem">4</div>
+        <div class="divitem">5</div>
+        <div class="divitem">6</div>
+    </section>
+    <section class="img">
+    </section>
+    <section class="food">
+
+        <div class="food1">
+            <img src="photos/xb1.jpg" alt="">
+            <h1>post Title Will Be here </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, optio eveniet sunt modi dolorem id quo nobis molestias? Tempora vero unde adipisci pariatur incidunt sunt quam totam quisquam similique porro?
+            Eligendi, iure at, minus corporis pariatur consequuntur aperiam quia sit mollitia voluptatum explicabo. Reiciendis nobis voluptatibus modi eum? Excepturi soluta libero quasi dicta, facere officia fugit nobis deleniti illum! Minus.Consectetur illum rem dolor earum est, ipsa id quibusdam obcaecati, repellendus, officiis laudantium autem impedit magnam architecto laborum ea blanditiis consequatur minus.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="food2">
+            <img src="photos/xb1.jpg" alt="">
+            <h1> post Title Will Be here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, optio eveniet sunt modi dolorem id quo nobis molestias? Tempora vero unde adipisci pariatur incidunt sunt quam totam quisquam similique porro?
+                Eligendi, iure at, minus corporis pariatur consequuntur </p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>
