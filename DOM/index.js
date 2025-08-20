@@ -50,3 +50,4 @@ secondsec.inneerHTML = ` <li> kaka babu </li>
             <li> mitin masi </li>
 `
 // two.appendChild(secondsec)
+
