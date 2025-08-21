@@ -6,9 +6,91 @@
     <title>Document</title>
 </head>
 <body>
+       <style>
+        .btn{
+            padding: 20px;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            align-items: center;
 
-    <h1>hello world</h1>
+        }
+        .first-text{
+            /* text-align: center; */
+        }
+        .secone{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .btn-group{
+          
+            display: flex;                /* এক লাইনে বোতাম সাজাবে */
+             gap: 20px;  
+        }
+        .cmnt{
+            border: 10px solid palevioletred;
+            border-radius: 10px;
+            width: 1400px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+       </style>
+       <section class="secone">
+    <h1 class="first-text">hello world</h1>
+    <div class="btn-group">
     <button onclick="console.log(3)">click me</button>
-<script src="event.js"></script>    
+    <button onclick="document.body.style.backgroundColor = 'yellow' ">yellow</button>
+    <button onclick="makered()">red</button>
+    <button onclick="makeblue()">blue</button>
+    <button id="makegreen"> GREEN</button>
+    <button id="black">BLACK</button>
+    </div>
+    <div>
+        <h1 id="add-new">my color</h1>
+        <button id="new-btn">click me</button>
+    </div>
+    </section>
+    <section id="sectwo">
+        <div class="cmnt">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ratione at nihil cum voluptate id, corporis accusamus illo accusantium ea ullam cupiditate ut totam, quae, fugit earum omnis aperiam minus?
+          Culpa officiis quis quisquam at maiores, nam sed modi nemo laudantium asperiores mollitia ex aut architecto amet minus facere a. Esse voluptatem dolore inventore, iste totam nam et eius aut!
+          Non, suscipit sed! Minima, minus eligendi odit molestiae, eveniet ipsa quae pariatur ipsam eos fugit ipsum soluta quasi laudantium quibusdam magni! Sed voluptatum quibusdam, suscipit excepturi impedit veritatis provident rerum?
+        llo excepturi unde alias praesentium! Ut atque veritatis, cum incidunt nesciunt, laboriosam minima veniam quos sunt harum optio impedit ea amet quidem, magnam tempore commodi nobis accusantium?
+          Eveniet quam, nostrum et, aspernatur ad aliquid ratione id magnam adipisci sunt exercitationem maiores architecto ducimus. Aliquid quae ut accusamus dolore ab. Quaerat, corporis a voluptate pariatur nobis perspiciatis. Dolorum?
+          </p>
+        </div>
+        <div class="cmnt">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ratione at nihil cum voluptate id, corporis accusamus illo accusantium ea ullam cupiditate ut totam, quae, fugit earum omnis aperiam minus?
+          Culpa officiis quis quisquam at maiores, nam sed modi nemo laudantium asperiores mollitia ex aut architecto amet minus facere a. Esse voluptatem dolore inventore, iste totam nam et eius aut!
+          Nm, nostrum et, aspernatur ad aliquid ratione id magnam adipisci sunt exercitationem maiores architecto ducimus. Aliquid quae ut accusamus dolore ab. Quaerat, corporis a voluptate pariatur nobis perspiciatis. Dolorum?
+          </p>
+        </div>
+        <div class="cmnt">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ratione at nihil cum voluptate id, corporis accusamus illo accusantium ea ullam cupiditate ut totam, quae, fugit earum omnis aperiam minus?
+          Culpa officiis quis quisquam at maiores, nam sed modi nemo laudantium asperiores mollitia ex aut architecto amet minus facere a. Esse voluptatem dolore inventore, iste totam nam et eius aut!
+          Non, suscipit sed! Minima, minus eligendi odit molestiae, eveniet ipsa quae pariatur ipsam eos fugit ipsum soluta quasi laudantium quibusdam magni! Sed voluptatum quibusdam, suscipit excepturi impedit veritatis provident rerum?
+          tae dignissimos unde quod illum ipsam impedit id omnis ullam veniam! Dolor, quidem nemo commodi exercitationem distinctio illo vel dolores odio quam suscipit autem corporis temporibus fuga? Quaerat, magnam?
+          Quas, minima nemo. Illo delectus qui magnam totam dolorem unde officiis quia repellendus suscipit, animi quod? Eaque vel obcaecati maiores odio? Asperiores veniam architecto aut enim eos labore ut molestias!
+          Et, harum! Amet illo excepturi unde alias praesentium! Ut atque veritatis, cum incidunt nesciunt, laboriosam minima veniam quos sunt harum optio impedit ea amet quidem, magnam tempore commodi nobis accusantium?
+          Eveniet quam, nostrum et, aspernatur ad aliquid ratione id magnam adipisci sunt exercitationem maiores architecto ducimus. Aliquid quae ut accusamus dolore ab. Quaerat, corporis a voluptate pariatur nobis perspiciatis. Dolorum?
+          </p>
+        </div>
+         </section>
+        <textarea name="" id="input-cmnt" placeholder="write comment" cols="40" rows="6"></textarea>  <br>
+        <button id="cmnt-btn">submit</button>     
+    
+<script>
+    function makered() {
+         document.body.style.backgroundColor = 'red'
+         }
+</script>
+
+<script src="event.js">
+
+</script>    
 </body>
 </html>
