@@ -13,17 +13,35 @@
 // ````````````````````````````object distructuring````````````````````````````
 
 
+// const model = {
+//     phn : "i",
+//     series : "13 pro max",
+//     price : 120000
+// }
+// console.log(model.series)
+
+// const {phn,series} = {
+//     phn : "sumsang",
+//     series : "galaxy s 25",
+//     price : 150000
+// }
+// console.log(phn,series)
+
+
+
+// ```````````````````````````````````object keys ,valus,delete,modify,freeze,seal```````````````````````````````````
+
 const model = {
     phn : "i",
     series : "13 pro max",
     price : 120000
 }
-console.log(model.series)
-
-const {phn,series} = {
-    phn : "sumsang",
-    series : "galaxy s 25",
-    price : 150000
-}
-console.log(phn,series)
-
+const keys = Object.keys(model) //sob key dekhabe
+//console.log(keys)
+const values = Object.values(model)
+//console.log(values) //sob valus show hobe
+delete model.phn
+model.year= 3030
+console.log(model)
+Object.freeze(model) //kono modity delete hobe na
+Object.seal(model) // shudu modity hobe
