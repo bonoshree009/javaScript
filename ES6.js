@@ -65,4 +65,13 @@
 //     price : 120000
 // }
 // console.log(model.phn?)
+
+
+// console.log(NaN==NaN)
   
+
+// console.log(NaN===NaN)
+console.log( []== "")
+console.log( []=== "")
+console.log( {}=={})
+console.log()
