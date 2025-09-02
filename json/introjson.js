@@ -1,5 +1,8 @@
 console.log("hello")
 
+
+// json like object bt with Notation.sob string hoa jai [ key value]
+
 const person = {
   name: "Bonoshree",
   age: 22,
@@ -15,3 +18,13 @@ const person = {
 console.log(person);
 const jsonperson = JSON.stringify(person)
 console.log(jsonperson)
+const jsonperso = JSON.parse(jsonperson)
+console.log(jsonperso)
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+
+
