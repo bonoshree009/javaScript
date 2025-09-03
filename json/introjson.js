@@ -23,8 +23,9 @@ const person = {
 
 
 // fetch('https://jsonplaceholder.typicode.com/todos/1')
-//     // fetch ata return kore na just promise dei tai chaining function use kori saita than()
+//   promise dibe
 //       .then(response => response.json())
+//          promise dibe
 //       .then(data => console.log(data))
 
       const loaddata =()  =>{
@@ -34,4 +35,10 @@ const person = {
       }
 
 
+      const loadpost =()=> {
+      const url = "https://jsonplaceholder.typicode.com/posts"
+        fetch(url).then(res => res.json())
+        .then(data =>console.log(data))
+
+      }
 
