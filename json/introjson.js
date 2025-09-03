@@ -44,6 +44,7 @@ const person = {
 
       const displaypost =(posts) =>{
          const postContainer = document.getElementById("post-container")
+         postContainer.innerHTML =" "
            // console.log(post)
            posts.forEach(post => {
             //console.log(post.title)
