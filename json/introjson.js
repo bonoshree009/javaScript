@@ -38,7 +38,23 @@ const person = {
       const loadpost =()=> {
       const url = "https://jsonplaceholder.typicode.com/posts"
         fetch(url).then(res => res.json())
-        .then(data =>console.log(data))
+        .then(data =>displaypost(data))
 
       }
+
+      const displaypost =(posts) =>{
+         const postContainer = document.getElementById("post-container")
+           // console.log(post)
+           posts.forEach(post => {
+            //console.log(post.title)
+            let li = document.createElement("li")
+            li.innerText = post.title
+            //console.log(li)
+           postContainer.appendChild(li)
+            
+           });
+      }
+
+
+       
 
