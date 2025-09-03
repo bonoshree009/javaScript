@@ -15,16 +15,23 @@ const person = {
   }
 };
 
-console.log(person);
-const jsonperson = JSON.stringify(person)
-console.log(jsonperson)
-const jsonperso = JSON.parse(jsonperson)
-console.log(jsonperso)
+// console.log(person);
+// const jsonperson = JSON.stringify(person)
+// console.log(jsonperson)
+// const jsonperso = JSON.parse(jsonperson)
+// console.log(jsonperso)
 
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     // fetch ata return kore na just promise dei tai chaining function use kori saita than()
+//       .then(response => response.json())
+//       .then(data => console.log(data))
+
+      const loaddata =()  =>{
+        fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
-      .then(json => console.log(json))
+      .then(data => console.log(data))
+      }
 
 
 
