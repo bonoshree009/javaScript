@@ -1,0 +1,5 @@
+console.log("one")
+console.log("two")
+fetch("").then(res=>res.json).then(() =>console.log("got data"))
+console.log("four")
+console.log("five")
